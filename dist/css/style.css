@@ -1,0 +1,130 @@
+html, body {
+    background-color: #70CF51;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow:hidden;
+    margin:0px; padding:0px;
+    background-image: url('../images/grass.png');
+    background-size: cover;
+}
+
+body * {
+    position: absolute;
+    display: block;
+    margin:0px; padding:0px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+text {
+    font-size: 20px;
+    bottom: 1%;
+    left: 5px;
+    color: #ffffff;
+}
+text2 {
+    font-size: 20px;
+    bottom: 5%;
+    left: 5px;
+    color: #ffffff;
+    
+}
+
+level {
+    left:calc(50% - 512px);
+    top:calc(50% - 384px);
+    width:1024px; height:768px;
+    background-color: #000000;
+    border-radius: 15px;
+    overflow: hidden;
+    border:3px solid white;
+    box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes dragonRed {
+    0%   {background-image: url('../images/Dragon1.png');}
+    50%  {background-image: url('../images/Dragon2.png');}
+    100% {background-image: url('../images/Dragon3.png');}
+}
+
+dragonred {
+	width:168px; min-height:108px;
+	
+    animation-name: dragonRed;
+    animation-duration: 0.3s;
+    animation-iteration-count: 50;
+}
+@keyframes dragonBlue {
+    0%   {background-image: url('../images/Dragon4.png');}
+    50%  {background-image: url('../images/Dragon5.png');}
+    100% {background-image: url('../images/Dragon6.png');}
+}
+
+dragonblue {
+	width:168px; min-height:108px;
+	
+    animation-name: dragonBlue;
+    animation-duration: 0.3s;
+    animation-iteration-count: 50;
+}
+@keyframes dragonGreen {
+    0%   {background-image: url('../images/Dragon7.png');}
+    50%  {background-image: url('../images/Dragon8.png');}
+    100% {background-image: url('../images/Dragon9.png');}
+}
+
+dragongreen {
+	width:168px; min-height:108px;
+	
+    animation-name: dragonGreen;
+    animation-duration: 0.3s;
+    animation-iteration-count: 50;
+}
+
+
+truck {
+	width:281px; min-height:155px;
+	background-image: url('../images/truck.png');
+}
+
+player {
+    width:61px; height:102px;
+    background-image: url('../images/player.png');
+}
+ball {
+    width:20px; min-height:20px;
+    background-image: url('../images/tree.png');
+    
+}
+btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  cursor: pointer;
+  margin-right: 20px;
+  display: inline-block;
+  left: 400px;
+  top: 300px;
+}
+
+btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
